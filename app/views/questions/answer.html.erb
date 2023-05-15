@@ -1,0 +1,23 @@
+<h1>Stupid Coaching</h1>
+
+
+  <ul>
+    <li>
+      Q: <% if @question.blank? %>
+      😶
+      <% else %>
+        <%= @question %>
+      <% end %>
+    </li>
+    <li>
+       A:<%= @answer %>
+    </li>
+  </ul>
+
+
+
+
+
+
+
+<%= link_to "Ask a new question", ask_path %>
